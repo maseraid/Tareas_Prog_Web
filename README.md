@@ -1,1 +1,1 @@
-El archhivo index.html Se encuanetra la página web utilizando el Framework Tailwind CSS.
+En archhivo index.html Se encuentra la página web utilizando el Framework Tailwind CSS.
