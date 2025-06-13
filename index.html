@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Web con Tailwind CSS</title>
+  <!-- Enlace CDN de Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header / Encabezado -->
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <h1 class="text-3xl font-bold">Mi Página Web</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav class="bg-white shadow-sm p-3">
+    <ul class="flex space-x-4">
+      <li><a href="#" class="text-blue-600 hover:underline">Inicio</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Servicios</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="p-6">
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Bienvenido</h2>
+      <p class="text-gray-700">Esta es una página web sencilla construida con el framework Tailwind CSS.</p>
+    </section>
+
+    <!-- Tarjeta de contenido -->
+    <div class="bg-white p-4 rounded-lg shadow-md max-w-md mb-6">
+      <h3 class="text-xl font-medium mb-2">Tarjeta de ejemplo</h3>
+      <p class="text-gray-600 mb-4">Tailwind permite crear interfaces limpias y modernas sin escribir CSS tradicional.</p>
+      <button class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Saber más</button>
+    </div>
+
+    <!-- Formulario -->
+    <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
+      <h3 class="text-xl font-medium mb-4">Formulario de Contacto</h3>
+      <form action="#" method="POST" class="space-y-4">
+
+        <!-- Campo: Nombre -->
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <!-- Campo: Correo -->
+        <div>
+          <label for="correo" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+
+        <!-- Campo: Mensaje -->
+        <div>
+          <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+
+        <!-- Botón de envío -->
+        <div>
+          <button type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded shadow-md">
+            Enviar
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer / Pie de página -->
+  <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
